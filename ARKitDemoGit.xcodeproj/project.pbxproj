@@ -13,8 +13,8 @@
 		1C0F6BE0232CBEE400A90C9A /* ARKitDemoGit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C0F6BDE232CBEE400A90C9A /* ARKitDemoGit.xcdatamodeld */; };
 		1C0F6BE2232CBEEC00A90C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C0F6BE1232CBEEC00A90C9A /* Assets.xcassets */; };
 		1C0F6BE5232CBEEC00A90C9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0F6BE3232CBEEC00A90C9A /* LaunchScreen.storyboard */; };
-		1C295DA923349D10009CD30A /* Drone.dae in Resources */ = {isa = PBXBuildFile; fileRef = 1C295DA723349D10009CD30A /* Drone.dae */; };
-		1C295DAA23349D10009CD30A /* Drone.scn in Resources */ = {isa = PBXBuildFile; fileRef = 1C295DA823349D10009CD30A /* Drone.scn */; };
+		1C295DAD23349E27009CD30A /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C295DAC23349E27009CD30A /* Objects.swift */; };
+		1C295DC12334D1A6009CD30A /* Drone_obj.obj in Resources */ = {isa = PBXBuildFile; fileRef = 1C295DC02334D1A5009CD30A /* Drone_obj.obj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 		1C0F6BE1232CBEEC00A90C9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C0F6BE4232CBEEC00A90C9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C0F6BE6232CBEEC00A90C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1C295DA723349D10009CD30A /* Drone.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Drone.dae; sourceTree = "<group>"; };
-		1C295DA823349D10009CD30A /* Drone.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Drone.scn; sourceTree = "<group>"; };
+		1C295DAC23349E27009CD30A /* Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
+		1C295DC02334D1A5009CD30A /* Drone_obj.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Drone_obj.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +60,7 @@
 		1C0F6BD6232CBEE400A90C9A /* ARKitDemoGit */ = {
 			isa = PBXGroup;
 			children = (
+				1C295DAB23349DF1009CD30A /* Utilities */,
 				1C295DA623349CE6009CD30A /* Resources */,
 				1C0F6BD7232CBEE400A90C9A /* AppDelegate.swift */,
 				1C0F6BD9232CBEE400A90C9A /* ViewController.swift */,
@@ -75,10 +76,17 @@
 		1C295DA623349CE6009CD30A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1C295DA723349D10009CD30A /* Drone.dae */,
-				1C295DA823349D10009CD30A /* Drone.scn */,
+				1C295DC02334D1A5009CD30A /* Drone_obj.obj */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1C295DAB23349DF1009CD30A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1C295DAC23349E27009CD30A /* Objects.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,10 +147,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C295DC12334D1A6009CD30A /* Drone_obj.obj in Resources */,
 				1C0F6BE5232CBEEC00A90C9A /* LaunchScreen.storyboard in Resources */,
-				1C295DA923349D10009CD30A /* Drone.dae in Resources */,
 				1C0F6BE2232CBEEC00A90C9A /* Assets.xcassets in Resources */,
-				1C295DAA23349D10009CD30A /* Drone.scn in Resources */,
 				1C0F6BDD232CBEE400A90C9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +163,7 @@
 			files = (
 				1C0F6BDA232CBEE400A90C9A /* ViewController.swift in Sources */,
 				1C0F6BD8232CBEE400A90C9A /* AppDelegate.swift in Sources */,
+				1C295DAD23349E27009CD30A /* Objects.swift in Sources */,
 				1C0F6BE0232CBEE400A90C9A /* ARKitDemoGit.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +308,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5B8V9DT8F2;
 				INFOPLIST_FILE = ARKitDemoGit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -308,6 +317,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tml.ARKitDemoGit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "be981c94-1317-4476-b3fd-85c942ed82ab";
+				PROVISIONING_PROFILE_SPECIFIER = "VS: WildCard Development";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,7 +328,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5B8V9DT8F2;
 				INFOPLIST_FILE = ARKitDemoGit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -325,6 +337,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tml.ARKitDemoGit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "be981c94-1317-4476-b3fd-85c942ed82ab";
+				PROVISIONING_PROFILE_SPECIFIER = "VS: WildCard Development";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
