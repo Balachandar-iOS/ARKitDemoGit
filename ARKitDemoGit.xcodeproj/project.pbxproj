@@ -13,6 +13,8 @@
 		1C0F6BE0232CBEE400A90C9A /* ARKitDemoGit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C0F6BDE232CBEE400A90C9A /* ARKitDemoGit.xcdatamodeld */; };
 		1C0F6BE2232CBEEC00A90C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C0F6BE1232CBEEC00A90C9A /* Assets.xcassets */; };
 		1C0F6BE5232CBEEC00A90C9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0F6BE3232CBEEC00A90C9A /* LaunchScreen.storyboard */; };
+		1C295DA923349D10009CD30A /* Drone.dae in Resources */ = {isa = PBXBuildFile; fileRef = 1C295DA723349D10009CD30A /* Drone.dae */; };
+		1C295DAA23349D10009CD30A /* Drone.scn in Resources */ = {isa = PBXBuildFile; fileRef = 1C295DA823349D10009CD30A /* Drone.scn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1C0F6BE1232CBEEC00A90C9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C0F6BE4232CBEEC00A90C9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C0F6BE6232CBEEC00A90C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C295DA723349D10009CD30A /* Drone.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Drone.dae; sourceTree = "<group>"; };
+		1C295DA823349D10009CD30A /* Drone.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Drone.scn; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		1C0F6BD6232CBEE400A90C9A /* ARKitDemoGit */ = {
 			isa = PBXGroup;
 			children = (
+				1C295DA623349CE6009CD30A /* Resources */,
 				1C0F6BD7232CBEE400A90C9A /* AppDelegate.swift */,
 				1C0F6BD9232CBEE400A90C9A /* ViewController.swift */,
 				1C0F6BDB232CBEE400A90C9A /* Main.storyboard */,
@@ -65,6 +70,15 @@
 				1C0F6BDE232CBEE400A90C9A /* ARKitDemoGit.xcdatamodeld */,
 			);
 			path = ARKitDemoGit;
+			sourceTree = "<group>";
+		};
+		1C295DA623349CE6009CD30A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C295DA723349D10009CD30A /* Drone.dae */,
+				1C295DA823349D10009CD30A /* Drone.scn */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +140,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C0F6BE5232CBEEC00A90C9A /* LaunchScreen.storyboard in Resources */,
+				1C295DA923349D10009CD30A /* Drone.dae in Resources */,
 				1C0F6BE2232CBEEC00A90C9A /* Assets.xcassets in Resources */,
+				1C295DAA23349D10009CD30A /* Drone.scn in Resources */,
 				1C0F6BDD232CBEE400A90C9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
